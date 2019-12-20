@@ -1,0 +1,21 @@
+.footer {
+    background: #39649d;
+    padding-top: 65px;
+    padding-bottom: 32px;
+
+    &__nav {
+        margin-bottom: 91px;
+    }
+
+    &__copyright {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: calc(21 / 14);
+        color: #e3e7f2;
+        text-align: center;
+    }
+
+    &__copyright-link {
+        color: var(--pink);
+    }
+}

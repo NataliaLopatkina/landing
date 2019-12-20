@@ -1,0 +1,43 @@
+mixin functions()
+    section(class="functions")
+        div(class="box")
+            h3(class="title functions__title") Функции приложения
+            div(class="functions__list")
+                include ../../_blocks/function/function.pug
+                -
+                    var functions = [
+                        {
+                            img: "medicine",
+                            text: "Планирование графика приема лекарств",
+                        },
+
+                        {
+                            img: "siren",
+                            text: "Уведомление врача<br> об исполнении назначений",
+                        },
+
+                        {
+                            img: "health",
+                            text: "Ведение дневника самочувствия",
+                        },
+
+                        {
+                            img: "smartwatch",
+                            text: "Удаленное предоставление измерений врачу",
+                        },
+
+                        {
+                            img: "conversation",
+                            text: "Общение с врачами через встроенный мессенджер",
+                        },
+
+                        {
+                            img: "facebook",
+                            text: "Получение уведомлений для выполнения назначений",
+                        }
+                    ]
+
+                each obj in functions
+                    +function(obj)(class="functions__item")
+    
+    // END .functions

@@ -1,0 +1,14 @@
+mixin subscription()
+    section(class="subscription")
+        div(class="box")
+            h3(class="title subscription__title") Получите бесплатный доступ к «Дневнику здоровья»
+            p(class="text text--large subscription__text") Оставьте свою электронную почту <br> и вы узнаете о запуске данного сервиса первым!
+            form(class="subscription__form")
+                input(type="email" placeholder="Ваш E-mail" class="subscription__field")
+                include ../../_blocks/button/button.pug
+                +button({
+                    text: "Отправить",
+                    mod: ["fill"]
+                })
+
+    // END .subscription

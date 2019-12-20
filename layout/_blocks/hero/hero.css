@@ -1,0 +1,26 @@
+.hero {
+    background: url("../images/background/background-header.jpg") no-repeat;
+    padding-top: 181px;
+    padding-bottom: 211px;
+    margin-top: -76px;
+    text-align: center;
+
+    @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+        background: url("../images/background/background-header@2x.jpg") no-repeat;
+        background-size: 1920px auto;
+    }
+
+    &__title {
+        max-width: 748px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 37px;
+    }
+
+    &__subtitle {
+        max-width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 47px;
+    }
+}

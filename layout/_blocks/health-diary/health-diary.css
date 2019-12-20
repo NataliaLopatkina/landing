@@ -1,0 +1,38 @@
+.health-diary {
+    padding-top: 153px;
+    padding-bottom: 200px;
+    background: #fafaff;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 88px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        width: 660px;
+        padding-left: 60px;
+        box-sizing: border-box;
+        margin-right: 48px;
+    }
+
+    &__item {
+        margin-bottom: 79px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-title {
+        margin-bottom: 9px;
+    }
+
+    &__image-box {
+        width: calc(100% - 660px);
+    }
+}

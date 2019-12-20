@@ -1,0 +1,9 @@
+mixin function(obj)
+    div(class="function")&attributes(attributes)
+        div(class="function__image-box")
+            img(class="function__img",
+                src="images/icons/" + obj.img + ".png",
+                alt=obj.img)
+        p(class="text function__text") !{obj.text}
+
+    // END .function

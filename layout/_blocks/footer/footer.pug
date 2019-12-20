@@ -1,0 +1,44 @@
+mixin footer()
+    footer(class="footer")
+        div(class="box")
+            nav(class="nav footer__nav")
+                include ../../_blocks/logo/logo.pug
+                +logo()(class="header__logo")
+
+                ul(class="nav__list")
+                    -
+                        var links = [
+                            {
+                                href: "#5",
+                                text: "О сервисе",
+                            },
+
+                            {
+                                href: "#5",
+                                text: "Функции",
+                            },
+
+                            {
+                                href: "#5",
+                                text: "Возможности",
+                            },
+
+                            {
+                                href: "#5",
+                                text: "Партнеры",
+                            },
+
+                            {
+                                href: "tel:88005004549",
+                                text: "88005004549",
+                            },
+                        ]
+
+                    each item in links
+                        li(class="nav__item")
+                            a(class="nav__link" href=item.href) !{item.text}
+
+            p(class="footer__copyright") Разработка сайта 
+                a(href="" class="footer__copyright-link") Redsoft
+
+    // END .footer

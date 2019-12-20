@@ -1,0 +1,42 @@
+mixin description()
+    div(class="description")
+        div(class="box description__box")
+            div(class="image-box description__image-box")
+                img(class="image-box__image",
+                    src="images/mockups/mockup.jpg",
+                    srcset="images/mockups/mockup@2x.jpg 2x",
+                    alt="Mockup")
+            div(class="description__block-text")
+                p(class="title description__title") Что такое «Дневник здоровья»?
+                p(class="text description__text") Дневник пациента — это удобный онлайн-сервис:
+                ul(class="description__list")
+                    -
+                        var list = [
+                            {
+                                text: "Вносите результаты измерений вручную или с помощью интегрированных приборов",
+                            },
+
+                            {
+                                text: "Ведите персональную медицинскую карту с историей ваших измерений",
+                            },
+
+                            {
+                                text: "Делитесь результатами измерений со специалистами<br> для повышения эффективности лечения",
+                            },
+
+                            {
+                                text: "Получайте рекомендации, созданные специально для вас",
+                            },
+                        ]
+
+                    each item in list
+                        li(class="description__item") 
+                            p(class="text description__item-text") !{item.text}
+                        
+                include ../../_blocks/button/button.pug
+                +button({
+                    text: "Оставить заявку",
+                    mod: ["fill"]
+                })
+
+    // END .description

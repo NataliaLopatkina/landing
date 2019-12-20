@@ -1,0 +1,48 @@
+.specialists {
+    background: #f1f2f9;
+    padding-top: 81px;
+    padding-bottom: 181px;
+    position: relative;
+
+    &__box {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__image-box {
+        width: 975px;
+        position: absolute;
+        top: -83px;
+        left: -70px;
+    }
+
+    &__text-box {
+        max-width: 600px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 16px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 9px;
+            left: 0;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background: #16afe0;
+            border-radius: 50%;
+        }
+    }
+}

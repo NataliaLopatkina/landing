@@ -1,0 +1,66 @@
+.description {
+    padding-top: 147px;
+    padding-bottom: 80px;
+    position: relative;
+
+    &:after {
+        content: url("../images/background/diagram.png");
+        display: block;
+        position: absolute;
+        right: 95px;
+        bottom: -51px;
+        z-index: -1;
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__image-box {
+        padding-left: 122px;
+    }
+
+    &__block-text {
+        padding-top: 83px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 41px;
+    }
+
+    &__title {
+        margin-bottom: 17px;
+    }
+
+    &__text {
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        list-style: none;
+        max-width: 476px;
+        margin-bottom: 37px;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 9px;
+            left: 0;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background: #16afe0;
+            border-radius: 50%;
+        }
+    }
+}

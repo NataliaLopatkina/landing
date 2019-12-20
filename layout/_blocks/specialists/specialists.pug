@@ -1,0 +1,39 @@
+mixin specialists()
+    section(class="specialists")
+        div(class="box specialists__box")
+            div(class="image-box specialists__image-box")
+                img(class="image-box__image",
+                    src="images/chart/chart.png",
+                    srcset="images/chart/chart@2x.png",
+                    alt="Chart")
+            div(class="specialists__text-box")
+                h3(class="title specialists__title") Специалистам
+                ul(class="specialists__list")
+                    -
+                        var list = [
+                            {
+                                text: "Дистанционный контроль состояния здоровья ваших пациентов",
+                            },
+
+                            {
+                                text: "Наблюдение за динамикой изменения основных <br> медицинских показателей",
+                            },
+
+                            {
+                                text: "Наличие алгоритмов автоматического анализа <br> поступающей информации",
+                            },
+
+                            {
+                                text: "Индивидуальная система уведомлений об изменении <br> состояния каждого пациента",
+                            },
+
+                            {
+                                text: "Дополнительный сервис коммуникации, позволяющий активно вовлекать пациента в процесс профилактики, лечения и реабилитации.",
+                            },
+                        ]
+
+                    each item in list
+                        li(class="specialists__item")
+                            p(class="text specialists__text") !{item.text}
+
+    // END .specialists

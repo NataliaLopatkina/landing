@@ -1,0 +1,15 @@
+@import "../nav/nav.css";
+
+.header {
+    padding-top: 15px;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 200px;
+    }
+}

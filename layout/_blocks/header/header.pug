@@ -1,0 +1,10 @@
+mixin header()
+    header(class="header")
+        div(class="box header__box")
+            include ../../_blocks/nav/nav.pug
+            +nav()
+
+            include ../../_blocks/header-action/header-action.pug
+            +header-action()
+
+    // END .header

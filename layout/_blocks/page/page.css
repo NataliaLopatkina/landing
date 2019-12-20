@@ -1,0 +1,17 @@
+@import "../vars-color/vars-color.css";
+@import "../visually-hidden/visually-hidden.css";
+@import "../fonts/fonts.css";
+@import "../box/box.css";
+@import "../button/button.css";
+@import "../image-box/image-box.css";
+@import "../title/title.css";
+@import "../text/text.css";
+
+.page {
+    font-family: "Cera Round Pro", "Arial", sans-serif;
+    color: var(--dark-blue);
+
+    a {
+        text-decoration: none;
+    }
+}

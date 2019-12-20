@@ -1,0 +1,33 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title Landing
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap&subset=cyrillic" rel="stylesheet")
+        link(rel="stylesheet" href="stylesheets/index.min.css")
+    
+    body(class="page")
+        include ../../_blocks/header/header.pug
+        +header()
+
+        main(class="main")
+            include ../../_blocks/hero/hero.pug
+            +hero()
+
+            include ../../_blocks/description/description.pug
+            +description()
+
+            include ../../_blocks/functions/functions.pug
+            +functions(obj)
+
+            include ../../_blocks/health-diary/health-diary.pug
+            +health-diary()
+
+            include ../../_blocks/specialists/specialists.pug
+            +specialists()
+
+            include ../../_blocks/subscription/subscription.pug
+            +subscription()
+
+        include ../../_blocks/footer/footer.pug
+        +footer()

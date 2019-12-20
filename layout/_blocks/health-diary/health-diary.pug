@@ -1,0 +1,36 @@
+mixin health-diary()
+    section(class="health-diary")
+        div(class="box health-diary__box")
+            h3(class="title title--dark health-diary__title") Ведите персональный дневник мониторинга здоровья
+            div(class="health-diary__content")
+                ol(class="health-diary__list")
+                    -
+                        var list = [
+                            {
+                                title: "Хранение данных",
+                                text: "Контролируйте и следите за динамикой изменения показателей вашего здоровья. Вносите результаты измерений медицинских показателей вручную или с помощью интегрированных приборов, храните историю измерений и отслеживайте динамику состояния здоровья",
+                            },
+
+                            {
+                                title: "Сообшение информации врачу",
+                                text: "Позвольте специалисту дистанционно следить за вашим здоровьем. Будьте на связи со специалистом - отправляйте информацию о своем самочувствии, обменивайтесь сообщениями и получайте рекомендации по вашему здоровью и лечению.",
+                            },
+
+                            {
+                                title: "Напоминание о важном",
+                                text: "Получайте рекомендации, созданные специально для вас. <br> Система, персонально настроенная под ваши требования, автоматически напомнит о необходимости выполнить рекомендации медицинского специалиста: принять препарат или выполнить измерения.",
+                            },
+                        ]
+
+                    each item in list
+                        li(class="health-diary__item")
+                            p(class="text text--large health-diary__item-title") !{item.title}
+                            p(class="text health-diary__item-text") !{item.text}
+
+                div(class="image-box health-diary__image-box")
+                    img(class="image-box__image",
+                        src="images/mockups/mockups.png",
+                        srcset="images/mockups/mockups@2x.png",
+                        alt="Mockups")
+
+    // END .health-diary

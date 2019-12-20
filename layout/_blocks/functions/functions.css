@@ -1,0 +1,27 @@
+@import "../function/function.css";
+
+.functions {
+    background: url("../images/background/functions-background.jpg");
+    padding-top: 149px;
+    padding-bottom: 215px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 91px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: -80px;
+        padding-left: 57px;
+        padding-right: 57px;
+    }
+
+    &__item {
+        margin: 40px;
+        width: calc(100% / 3 - 80px);
+        margin-bottom: 34px;
+    }
+}

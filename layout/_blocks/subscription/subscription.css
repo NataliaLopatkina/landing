@@ -1,0 +1,42 @@
+.subscription {
+    background: #e3eaf5;
+    padding-top: 140px;
+    padding-bottom: 160px;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 39px;
+    }
+
+    &__text {
+        max-width: 585px;
+        margin: auto;
+        margin-bottom: 55px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__field {
+        font-size: 14px;
+        color: #a8b2bf;
+        width: 360px;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        border: 1px solid #4f699b;
+        background: transparent;
+        margin-right: 41px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #a8b2bf;
+        }
+    }
+}
