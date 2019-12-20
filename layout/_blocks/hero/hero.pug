@@ -4,7 +4,7 @@ mixin hero(obj)
         div(class="box hero__box")
             h1(class="title title--white hero__title") !{obj.title}
             h2(class="text text--large text--white hero__subtitle") !{obj.subtitle}
-            
+            !="\n"
             include ../../_blocks/button/button.pug
             +button({
                 tag: "a",
@@ -13,4 +13,5 @@ mixin hero(obj)
                 mod: ["fill", "small"]
             })(class="hero__button")
 
+    !="\n"
     // END .hero

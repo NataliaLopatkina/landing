@@ -4,7 +4,7 @@
     text-align: center;
 
     &--first {
-        background: url("../images/background/slide-1.jpg") no-repeat;
+        background: url("../images/background/slide-1.jpg") no-repeat center;
 
         @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
             background: url("../images/background/slide-1@2x.jpg") no-repeat center;
@@ -13,7 +13,7 @@
     }
 
     &--second {
-        background: url("../images/background/slide-2.jpg") no-repeat;
+        background: url("../images/background/slide-2.jpg") no-repeat center;
         padding-bottom: 267px;
 
         @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {

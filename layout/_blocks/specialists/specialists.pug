@@ -2,10 +2,12 @@ mixin specialists()
     section(class="specialists")
         div(class="box specialists__box")
             div(class="image-box specialists__image-box")
+                !="\n"
                 img(class="image-box__image",
                     src="images/chart/chart.png",
                     srcset="images/chart/chart@2x.png",
                     alt="Chart")
+                !="\n"
             div(class="specialists__text-box")
                 h3(class="title specialists__title") Специалистам
                 ul(class="specialists__list")
@@ -35,5 +37,6 @@ mixin specialists()
                     each item in list
                         li(class="specialists__item")
                             p(class="text specialists__text") !{item.text}
-
+    
+    !="\n"
     // END .specialists

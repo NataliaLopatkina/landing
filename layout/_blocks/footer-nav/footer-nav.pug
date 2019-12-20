@@ -36,6 +36,9 @@ mixin footer-nav()
 
             each item in links
                 li(class="footer-nav__item")
+                    !="\n"
                     a(class="text text--white footer-nav__link" href=item.href) !{item.text}
+                    !="\n"
 
+    !="\n"
     // END .footer-nav

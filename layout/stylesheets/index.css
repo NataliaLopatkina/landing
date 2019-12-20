@@ -609,11 +609,11 @@ button[disabled] {
 }
 
 .hero--first {
-        background: url("../images/background/slide-1.jpg") no-repeat
+        background: url("../images/background/slide-1.jpg") no-repeat center
     }
 
 .hero--second {
-        background: url("../images/background/slide-2.jpg") no-repeat;
+        background: url("../images/background/slide-2.jpg") no-repeat center;
         padding-bottom: 267px
     }
 
@@ -640,7 +640,8 @@ button[disabled] {
     }
 
 .slider {
-    margin-top: -76px
+    margin-top: -76px;
+    max-height: 752px
 }
 
 .slider .slick-dots {
@@ -664,12 +665,14 @@ button[disabled] {
         height: 16px;
         border-radius: 8px;
         -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        padding-top: 6px
+                box-sizing: border-box
     }
 
 .slider .slick-dots li {
-            margin-right: 8px
+            margin-right: 8px;
+            height: 100%;
+            padding-top: 6px;
+            cursor: pointer
         }
 
 .slider .slick-dots li.slick-active button {

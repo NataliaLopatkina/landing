@@ -31,6 +31,7 @@ mixin nav()
 
             each item in links
                 li(class="nav__item")
+                    !="\n"
                     a(class="nav__link" href=item.href) !{item.text}
-
+                    !="\n"
     //END .nav

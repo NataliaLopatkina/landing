@@ -1,9 +1,13 @@
 mixin function(obj)
     div(class="function")&attributes(attributes)
+        !="\n"
         div(class="function__image-box")
+            !="\n"
             img(class="function__img",
                 src="images/icons/" + obj.img + ".png",
                 alt=obj.img)
+            !="\n"
         p(class="text function__text") !{obj.text}
-
+        
+    !="\n"
     // END .function

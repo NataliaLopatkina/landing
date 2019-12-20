@@ -1,15 +1,21 @@
 mixin logo(obj)
     div(class="logo")&attributes(attributes)
         div(class="image-box")
+            !="\n"
             a(href="#5" class="logo__link")
+                !="\n"
                 if (obj.header)
                     img(class="image-box__image",
                         src="images/logo/logo.png",
                         srcset="images/logo/logo@2x.png 2x",
                         alt="Logo")
+                    !="\n"
                 else
                     img(class="image-box__image",
                         src="images/logo/logo-footer.png",
                         srcset="images/logo/logo-footer@2x.png 2x",
                         alt="Logo")
+                    !="\n"
+            !="\n"
+    !="\n"
     // END .logo

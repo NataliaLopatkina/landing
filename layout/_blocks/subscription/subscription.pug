@@ -4,14 +4,18 @@ mixin subscription()
             h3(class="title subscription__title") Получите бесплатный доступ к «Дневнику здоровья»
             p(class="text text--large subscription__text") Оставьте свою электронную почту <br> и вы узнаете о запуске данного сервиса первым!
             form(class="subscription__form" novalidate onsubmit="return false")
+                !="\n"
                 input(type="email" placeholder="Ваш E-mail" class="subscription__field" 
                 required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+                !="\n"
                 span(class="subscription__message")
+                !="\n"
+
                 include ../../_blocks/button/button.pug
                 +button({
                     text: "Отправить",
                     type: "submit",
                     mod: ["fill"]
                 })
-
+    !="\n"
     // END .subscription
