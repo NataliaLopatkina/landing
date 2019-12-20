@@ -1,27 +1,27 @@
-@import "../logo/logo.css";
-
-.nav {
+.footer-nav {
     display: flex;
     align-items: center;
 
     &__logo {
-        margin-right: 200px;
+        margin-right: 241px;
+        padding-top: 0;
     }
 
     &__list {
-        display: flex;
         list-style: none;
+        display: flex;
+        padding-top: 3px;
     }
 
     &__item {
-        margin-right: 52px;
+        margin-right: 70px;
         position: relative;
 
         &:after {
             position: absolute;
             left: 0;
             right: 0;
-            top: 20px;
+            top: 23px;
             margin: auto;
             content: "";
             width: 4px;
@@ -47,11 +47,5 @@
                 visibility: visible;
             }
         }
-    }
-
-    &__link {
-        font-size: 16px;
-        font-weight: 400;
-        color: #fdfffc;
     }
 }

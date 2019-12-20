@@ -1,8 +1,9 @@
-mixin hero()
-    div(class="hero")
+mixin hero(obj)
+
+    div(class="hero hero--" + obj.mod)
         div(class="box hero__box")
-            h1(class="title title--white hero__title") Расширяем возможности предоставления качественных медицинских услуг
-            h2(class="text text--large text--white hero__subtitle") «Дневник здоровья» – новый сервис для самоконтроля показателей состояния здоровья, разработанный для участников программы «Мое здоровье».
+            h1(class="title title--white hero__title") !{obj.title}
+            h2(class="text text--large text--white hero__subtitle") !{obj.subtitle}
             
             include ../../_blocks/button/button.pug
             +button({

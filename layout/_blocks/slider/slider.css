@@ -1,0 +1,51 @@
+@import "../hero/hero.css";
+
+.slider {
+    margin-top: -76px;
+
+    & .slick-dots {
+        position: absolute;
+        bottom: 47px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        list-style: none;
+        border: 1px solid #5489c3;
+        width: 72px;
+        height: 16px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        padding-top: 6px;
+
+        & li {
+            margin-right: 8px;
+
+            &.slick-active {
+                & button {
+                    background: #fafbfd;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        & button {
+            font-size: 0;
+            width: 16px;
+            height: 1px;
+            border: none;
+            border-radius: 1px;
+            background-color: #5489c3;
+            display: block;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

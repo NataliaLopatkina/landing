@@ -1,11 +1,11 @@
-mixin nav()
-    nav(class="nav")
+mixin footer-nav()
+    nav(class="footer-nav")&attributes(attributes)
         include ../../_blocks/logo/logo.pug
         +logo({
-            header: true
-        })(class="nav__logo")
+            header: false
+        })(class="footer-nav__logo")
 
-        ul(class="nav__list")
+        ul(class="footer-nav__list")
             -
                 var links = [
                     {
@@ -25,12 +25,17 @@ mixin nav()
 
                     {
                         href: "#5",
-                        text: "Партнеры",
+                        text: "Специалистам",
+                    },
+
+                    {
+                        href: "tel:88005004549",
+                        text: "88005004549",
                     },
                 ]
 
             each item in links
-                li(class="nav__item")
-                    a(class="nav__link" href=item.href) !{item.text}
+                li(class="footer-nav__item")
+                    a(class="text text--white footer-nav__link" href=item.href) !{item.text}
 
-    //END .nav
+    // END .footer-nav

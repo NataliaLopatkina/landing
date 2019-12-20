@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Landing</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="stylesheets/index.min.css">
 </head>
 
@@ -12,7 +12,7 @@
     <header class="header">
         <div class="box header__box">
             <nav class="nav">
-                <div class="logo header__logo">
+                <div class="logo nav__logo">
                     <div class="image-box"><a class="logo__link" href="#5"><img class="image-box__image" src="images/logo/logo.png" srcset="images/logo/logo@2x.png 2x" alt="Logo"></a></div>
                 </div><!-- END .logo-->
                 <ul class="nav__list">
@@ -27,15 +27,26 @@
         </div>
     </header><!-- END .header-->
     <main class="main">
-        <div class="hero">
-            <div class="box hero__box">
-                <h1 class="title title--white hero__title">Расширяем возможности предоставления качественных медицинских услуг</h1>
-                <h2 class="text text--large text--white hero__subtitle">«Дневник здоровья» – новый сервис для самоконтроля показателей состояния здоровья, разработанный для участников программы «Мое здоровье».</h2><a class="button button--fill button--small hero__button" href="#5">
-                    <span class="button__text">Узнать больше</span>
-                </a>
-                <!-- END .button-->
-            </div>
-        </div><!-- END .hero-->
+        <div class="slider">
+            <div class="hero hero--first">
+                <div class="box hero__box">
+                    <h1 class="title title--white hero__title">Расширяем возможности предоставления качественных медицинских услуг</h1>
+                    <h2 class="text text--large text--white hero__subtitle">«Дневник здоровья» – новый сервис для самоконтроля показателей состояния здоровья, разработанный для участников программы «Мое здоровье».</h2><a class="button button--fill button--small hero__button" href="#5">
+                        <span class="button__text">Узнать больше</span>
+                    </a>
+                    <!-- END .button-->
+                </div>
+            </div><!-- END .hero-->
+            <div class="hero hero--second">
+                <div class="box hero__box">
+                    <h1 class="title title--white hero__title">Следить за здоровьем станет проще</h1>
+                    <h2 class="text text--large text--white hero__subtitle">Скоро вы сможете находиться на связи со своим лечащим врачом независимо от своего местоположения, вести дневник мониторинга самочувствия, получать рекомендации по плану лечения и многое другое.</h2><a class="button button--fill button--small hero__button" href="#5">
+                        <span class="button__text">Узнать больше</span>
+                    </a>
+                    <!-- END .button-->
+                </div>
+            </div><!-- END .hero-->
+        </div><!-- END .slider-->
         <div class="description">
             <div class="box description__box">
                 <div class="image-box description__image-box"><img class="image-box__image" src="images/mockups/mockup.jpg" srcset="images/mockups/mockup@2x.jpg 2x" alt="Mockup"></div>
@@ -144,7 +155,7 @@
             <div class="box">
                 <h3 class="title subscription__title">Получите бесплатный доступ к «Дневнику здоровья»</h3>
                 <p class="text text--large subscription__text">Оставьте свою электронную почту <br> и вы узнаете о запуске данного сервиса первым!</p>
-                <form class="subscription__form"><input class="subscription__field" type="email" placeholder="Ваш E-mail"><button class="button button--fill">
+                <form class="subscription__form" novalidate onsubmit="return false"><input class="subscription__field" type="email" placeholder="Ваш E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"><span class="subscription__message"></span><button class="button button--fill" type="submit">
                         <span class="button__text">Отправить</span>
                     </button>
                     <!-- END .button-->
@@ -154,21 +165,24 @@
     </main>
     <footer class="footer">
         <div class="box">
-            <nav class="nav footer__nav">
-                <div class="logo header__logo">
-                    <div class="image-box"><a class="logo__link" href="#5"><img class="image-box__image" src="images/logo/logo.png" srcset="images/logo/logo@2x.png 2x" alt="Logo"></a></div>
+            <nav class="footer-nav footer__nav">
+                <div class="logo footer-nav__logo">
+                    <div class="image-box"><a class="logo__link" href="#5"><img class="image-box__image" src="images/logo/logo-footer.png" srcset="images/logo/logo-footer@2x.png 2x" alt="Logo"></a></div>
                 </div><!-- END .logo-->
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#5">О сервисе</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#5">Функции</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#5">Возможности</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#5">Партнеры</a></li>
-                    <li class="nav__item"><a class="nav__link" href="tel:88005004549">88005004549</a></li>
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a class="text text--white footer-nav__link" href="#5">О сервисе</a></li>
+                    <li class="footer-nav__item"><a class="text text--white footer-nav__link" href="#5">Функции</a></li>
+                    <li class="footer-nav__item"><a class="text text--white footer-nav__link" href="#5">Возможности</a></li>
+                    <li class="footer-nav__item"><a class="text text--white footer-nav__link" href="#5">Специалистам</a></li>
+                    <li class="footer-nav__item"><a class="text text--white footer-nav__link" href="tel:88005004549">88005004549</a></li>
                 </ul>
-            </nav>
+            </nav><!-- END .footer-nav-->
             <p class="footer__copyright">Разработка сайта <a class="footer__copyright-link" href="">Redsoft</a></p>
         </div>
     </footer><!-- END .footer-->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="scripts/common.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,10 @@
 @import "../function/function.css";
 
 .functions {
-    background: url("../images/background/functions-background.jpg");
+    background: url("../images/background/functions-background.jpg") center;
     padding-top: 149px;
     padding-bottom: 215px;
+    overflow-x: hidden;
 
     &__title {
         text-align: center;

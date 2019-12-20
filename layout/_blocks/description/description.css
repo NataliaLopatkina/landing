@@ -1,13 +1,14 @@
 .description {
-    padding-top: 147px;
+    padding-top: 149px;
     padding-bottom: 80px;
     position: relative;
+    overflow: hidden;
 
     &:after {
         content: url("../images/background/diagram.png");
         display: block;
         position: absolute;
-        right: 95px;
+        left: 70%;
         bottom: -51px;
         z-index: -1;
     }
@@ -33,13 +34,13 @@
     }
 
     &__text {
-        margin-bottom: 16px;
+        margin-bottom: 17px;
     }
 
     &__list {
         list-style: none;
         max-width: 476px;
-        margin-bottom: 37px;
+        margin-bottom: 35px;
     }
 
     &__item {

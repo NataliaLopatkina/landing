@@ -1,10 +1,12 @@
+@import "../footer-nav/footer-nav.css";
+
 .footer {
     background: #39649d;
-    padding-top: 65px;
-    padding-bottom: 32px;
+    padding-top: 59px;
+    padding-bottom: 29px;
 
     &__nav {
-        margin-bottom: 91px;
+        margin-bottom: 84px;
     }
 
     &__copyright {

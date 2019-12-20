@@ -1,20 +1,40 @@
 .hero {
-    background: url("../images/background/background-header.jpg") no-repeat;
     padding-top: 181px;
-    padding-bottom: 211px;
-    margin-top: -76px;
+    padding-bottom: 213px;
     text-align: center;
 
-    @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
-        background: url("../images/background/background-header@2x.jpg") no-repeat;
-        background-size: 1920px auto;
+    &--first {
+        background: url("../images/background/slide-1.jpg") no-repeat;
+
+        @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+            background: url("../images/background/slide-1@2x.jpg") no-repeat center;
+            background-size: 1920px auto;
+        }
+    }
+
+    &--second {
+        background: url("../images/background/slide-2.jpg") no-repeat;
+        padding-bottom: 267px;
+
+        @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+            background: url("../images/background/slide-2@2x.jpg") no-repeat center;
+            background-size: 1920px auto;
+        }
+
+        .hero__subtitle {
+            max-width: 886px;
+        }
+    }
+
+    &:focus {
+        outline: none;
     }
 
     &__title {
         max-width: 748px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 37px;
+        margin-bottom: 35px;
     }
 
     &__subtitle {

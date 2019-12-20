@@ -10,10 +10,10 @@
     }
 
     &__image-box {
-        width: 975px;
+        width: 51%;
         position: absolute;
         top: -83px;
-        left: -70px;
+        right: 53%;
     }
 
     &__text-box {

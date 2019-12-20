@@ -2,14 +2,12 @@
 
 .header {
     padding-top: 15px;
+    position: relative;
+    z-index: 1000;
 
     &__box {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-
-    &__logo {
-        margin-right: 200px;
     }
 }

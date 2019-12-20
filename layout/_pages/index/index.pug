@@ -3,7 +3,7 @@ html(lang='en')
     head
         meta(charset='utf-8')
         title Landing
-        link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap&subset=cyrillic" rel="stylesheet")
+        link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
         link(rel="stylesheet" href="stylesheets/index.min.css")
     
     body(class="page")
@@ -11,8 +11,8 @@ html(lang='en')
         +header()
 
         main(class="main")
-            include ../../_blocks/hero/hero.pug
-            +hero()
+            include ../../_blocks/slider/slider.pug
+            +slider(    )
 
             include ../../_blocks/description/description.pug
             +description()
@@ -31,3 +31,7 @@ html(lang='en')
 
         include ../../_blocks/footer/footer.pug
         +footer()
+
+        script(src="//code.jquery.com/jquery-1.11.0.min.js")
+        script(src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+        script(src="scripts/common.js")

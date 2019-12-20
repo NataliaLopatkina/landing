@@ -1,9 +1,15 @@
-mixin logo()
+mixin logo(obj)
     div(class="logo")&attributes(attributes)
         div(class="image-box")
             a(href="#5" class="logo__link")
-                img(class="image-box__image",
-                    src="images/logo/logo.png",
-                    srcset="images/logo/logo@2x.png 2x" alt="Logo")
-
+                if (obj.header)
+                    img(class="image-box__image",
+                        src="images/logo/logo.png",
+                        srcset="images/logo/logo@2x.png 2x",
+                        alt="Logo")
+                else
+                    img(class="image-box__image",
+                        src="images/logo/logo-footer.png",
+                        srcset="images/logo/logo-footer@2x.png 2x",
+                        alt="Logo")
     // END .logo
