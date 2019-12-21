@@ -14,7 +14,7 @@ const form = document.querySelector('.subscription__form');
 const email = document.querySelector('.subscription__field');
 const message = document.querySelector('.subscription__message');
 
-form.addEventListener('submit', ()=> {
+form.addEventListener('submit', function() {
     if (email.validity.patternMismatch) {
         message.innerHTML = 'Введен некорректный E-mail';
         message.classList.add('subscription__message--error');
